@@ -1,0 +1,16 @@
+a = int(input('Enter your number:'))
+c = input('To find out your last digit, Enter 1. For your 2nd last digit, enter 2. For your 3rd last digit, enter 3: ')
+if c == '2':
+    b = a % 100
+    while (b>10):
+        b=b//10
+    print (b)
+elif c =='1':
+    print (a%10)
+elif c =='3':
+    d = a % 1000
+    while (d>10):
+        d=d//1000
+    print (d)
+else : 
+    print ('Since you didnt ask for any above last digits, here is your number as it is :', a)
